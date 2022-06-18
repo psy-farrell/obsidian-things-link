@@ -24,12 +24,12 @@ function urlEncode(line: string) {
 
 
 function createProject(title: string, deepLink: string) {
-	const project = `things:///add-project?title=${title}&notes=${deepLink}&x-success=obsidian://project-id`
+	const project = `things:///add-project?title=${title}&notes=${deepLink}&show-quick-entry=true&x-success=obsidian://project-id`
 	window.open(project);
 }
 
 function createTask(line: string, deepLink: string) {
-	const task = `things:///add?title=${line}&notes=${deepLink}&x-success=obsidian://task-id`
+	const task = `things:///add?title=${line}&notes=${deepLink}&show-quick-entry=true&x-success=obsidian://task-id`
 	window.open(task);
 }
 
